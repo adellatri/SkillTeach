@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".LoginActivity">
+
+<ImageView
+    android:id="@+id/logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/logoskillteach"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp" />
+
+<TextView
+    android:id="@+id/app_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Login"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:layout_below="@id/logo"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:textColor="#004D40"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="-1dp"
+        android:background="@drawable/rounded_bg"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/email_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_backgound"
+            android:drawableLeft="@android:drawable/ic_menu_myplaces"
+            android:hint="Email/Username"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_backgound"
+            android:drawableLeft="@android:drawable/ic_lock_lock"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#2DBAB1"
+            android:text="Login" />
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:text="Lupa Password?"
+            android:textColor="#2DBAB1" />
+
+        <TextView
+            android:id="@+id/contact_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="250dp"
+            android:text="Hubungi Admin"
+            android:textColor="#2DBAB1" />
+    </LinearLayout>
+</RelativeLayout>
